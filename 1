@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi amor ❤️</title>
+
+<style>
+/* =========================================================
+   CONFIGURACIÓN GENERAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #020201;
+    color: #fff4b0;
+    font-family: Georgia, "Times New Roman", serif;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: inherit;
+}
+
+:root {
+    --gold: #ffd83d;
+    --gold-light: #fff09a;
+    --gold-dark: #9d7300;
+    --yellow: #ffc928;
+    --black: #020201;
+}
+
+
+/* =========================================================
+   FONDO
+========================================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(255, 205, 30, .08),
+            transparent 35%
+        );
+
+    animation: breathing 5s ease-in-out infinite;
+}
+
+@keyframes breathing {
+    0%,100% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   ESTRELLAS
+========================================================= */
+
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #ffe76b;
+
+    box-shadow:
+        0 0 5px #ffd21f,
+        0 0 12px #ffd21f;
+
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%,100% {
+        opacity: .15;
+        transform: scale(.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+section {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px;
+}
+
+
+/* =========================================================
+   EFECTO DORADO
+========================================================= */
+
+.gold-text {
+    color: var(--gold);
+    text-shadow:
+        0 0 5px #fff0a0,
+        0 0 15px #ffc400,
+        0 0 35px rgba(255, 191, 0, .65);
+}
+
+
+/* =========================================================
+   PRIMERA PANTALLA
+========================================================= */
+
+.hero {
+    text-align: center;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(90, 67, 0, .23),
+            transparent 55%
+        );
+}
+
+.hero-content {
+    max-width: 1000px;
+    animation: appear 1.5s ease;
+}
+
+.date {
+    font-family: monospace;
+    letter-spacing: 9px;
+    color: #e4bc32;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.hero-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    font-size: clamp(45px, 7vw, 90px);
+    line-height: 1.1;
+}
+
+.heart {
+    font-size: clamp(55px, 8vw, 100px);
+
+    background: linear-gradient(
+        135deg,
+        #fff06a,
+        #ffb321,
+        #ff6c5c
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    filter:
+        drop-shadow(0 0 8px #ffd21f)
+        drop-shadow(0 0 25px #ffb900);
+
+    animation: heartbeat 1.6s infinite;
+}
+
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.12);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.07);
+    }
+}
+
+.hero-subtitle {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #eee2ae;
+}
+
+.open-button {
+    margin-top: 40px;
+
+    padding: 14px 35px;
+
+    background: transparent;
+    color: var(--gold-light);
+
+    border: 1px solid var(--gold);
+    border-radius: 50px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 10px rgba(255, 208, 30, .15);
+
+    transition: .35s;
+}
+
+.open-button:hover {
+    background: rgba(255, 208, 30, .1);
+
+    box-shadow:
+        0 0 15px rgba(255, 208, 30, .5),
+        inset 0 0 15px rgba(255, 208, 30, .08);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   FLORES
+========================================================= */
+
+.flower-section {
+    overflow: hidden;
+    align-items: flex-end;
+}
+
+.flower-content {
+    position: absolute;
+    top: 13%;
+    text-align: center;
+    width: 100%;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 7px;
+    color: #d4af32;
+    text-transform: uppercase;
+}
+
+.flower-title {
+    font-size: clamp(40px, 6vw, 70px);
+    margin-top: 18px;
+}
+
+.flower-subtitle {
+    margin-top: 15px;
+    color: #ded5ae;
+}
+
+.flowers {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: min(800px, 100%);
+    height: 350px;
+}
+
+.flower {
+    position: absolute;
+    bottom: 0;
+
+    transform-origin: bottom center;
+
+    animation: sway 4s ease-in-out infinite;
+}
+
+.flower:nth-child(1) {
+    left: 20%;
+    transform: scale(.7);
+}
+
+.flower:nth-child(2) {
+    left: 35%;
+    animation-delay: -.8s;
+}
+
+.flower:nth-child(3) {
+    left: 50%;
+    transform: scale(1.25);
+    animation-delay: -1.5s;
+}
+
+.flower:nth-child(4) {
+    left: 65%;
+    animation-delay: -2s;
+}
+
+.flower:nth-child(5) {
+    left: 80%;
+    transform: scale(.7);
+    animation-delay: -2.5s;
+}
+
+@keyframes sway {
+    0%,100% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+.stem {
+    width: 5px;
+    height: 260px;
+
+    background: linear-gradient(
+        to right,
+        #285900,
+        #67a900,
+        #285900
+    );
+
+    margin: auto;
+    border-radius: 10px;
+}
+
+.flower-head {
+    position: absolute;
+    bottom: 240px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100px;
+    height: 100px;
+}
+
+.petal {
+    position: absolute;
+
+    width: 45px;
+    height: 70px;
+
+    left: 27px;
+    top: 10px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 50% 80%,
+            #ff9d00,
+            #ffe75c 55%,
+            #fff2a1
+        );
+
+    transform-origin: center bottom;
+}
+
+.petal:nth-child(1) {
+    transform: rotate(0deg) translateY(-25px);
+}
+
+.petal:nth-child(2) {
+    transform: rotate(45deg) translateY(-25px);
+}
+
+.petal:nth-child(3) {
+    transform: rotate(90deg) translateY(-25px);
+}
+
+.petal:nth-child(4) {
+    transform: rotate(135deg) translateY(-25px);
+}
+
+.petal:nth-child(5) {
+    transform: rotate(180deg) translateY(-25px);
+}
+
+.petal:nth-child(6) {
+    transform: rotate(225deg) translateY(-25px);
+}
+
+.petal:nth-child(7) {
+    transform: rotate(270deg) translateY(-25px);
+}
+
+.petal:nth-child(8) {
+    transform: rotate(315deg) translateY(-25px);
+}
+
+.flower-center {
+    position: absolute;
+
+    width: 38px;
+    height: 38px;
+
+    left: 31px;
+    top: 31px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #7a4700,
+            #bc7600,
+            #5b3700
+        );
+
+    box-shadow:
+        0 0 10px #ffbe18;
+}
+
+
+/* =========================================================
+   CARTAS
+========================================================= */
+
+.letters-section {
+    flex-direction: column;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(70, 51, 0, .18),
+            transparent 55%
+        );
+}
+
+.section-label {
+    color: #d5ad28;
+    letter-spacing: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 18px;
+
+    font-size: clamp(40px, 6vw, 70px);
+
+    color: var(--gold);
+
+    text-shadow:
+        0 0 10px #ffd21f,
+        0 0 25px rgba(255, 196, 0, .5);
+}
+
+.section-description {
+    color: #ddd4ac;
+    margin-top: 12px;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(180px, 1fr));
+
+    gap: 24px;
+
+    width: min(950px, 100%);
+
+    margin-top: 60px;
+}
+
+.card {
+    min-height: 245px;
+
+    padding: 35px 20px;
+
+    border: 1px solid rgba(218, 172, 25, .45);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(78, 59, 0, .35),
+            rgba(20, 17, 2, .7)
+        );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition:
+        transform .4s,
+        border .4s,
+        box-shadow .4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 20px rgba(255, 204, 35, .15),
+        inset 0 0 30px rgba(255, 204, 35, .05);
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 25px;
+
+    filter:
+        drop-shadow(0 0 8px rgba(255, 200, 30, .6));
+}
+
+.card h3 {
+    color: #ffe9a0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.card-button {
+    margin-top: 25px;
+
+    color: #c9a52a;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MODAL DE CARTA
+========================================================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 5000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    background: rgba(0,0,0,.86);
+
+    backdrop-filter: blur(8px);
+}
+
+.modal.active {
+    display: flex;
+}
+
+.letter {
+    width: min(600px, 100%);
+
+    max-height: 80vh;
+    overflow-y: auto;
+
+    padding: 45px;
+
+    border: 1px solid #c69b19;
+    border-radius: 15px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #211900,
+            #080700 70%
+        );
+
+    box-shadow:
+        0 0 50px rgba(255, 196, 0, .2);
+
+    text-align: center;
+
+    animation: modalIn .5s ease;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.letter-icon {
+    font-size: 50px;
+}
+
+.letter h2 {
+    margin: 20px 0 25px;
+
+    color: var(--gold);
+
+    text-shadow:
+        0 0 15px #ffc400;
+}
+
+.letter p {
+    color: #e8dfbd;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.close-modal {
+    margin-top: 15px;
+
+    border: 1px solid #b99016;
+
+    background: transparent;
+
+    color: #e4c54c;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   ÁLBUM
+========================================================= */
+
+.album-section {
+    flex-direction: column;
+    text-align: center;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(74, 54, 0, .2),
+            transparent 55%
+        );
+}
+
+.album {
+    width: min(1000px, 100%);
+    margin-top: 55px;
+}
+
+.photo-viewer {
+    position: relative;
+
+    width: 100%;
+    height: 550px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(220, 174, 27, .55);
+
+    background: #090806;
+
+    box-shadow:
+        0 0 40px rgba(255, 196, 0, .08);
+}
+
+.photo {
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0;
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+    transform: scale(1.05);
+}
+
+.photo.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter:
+        brightness(.75)
+        saturate(.9);
+}
+
+.photo::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.8),
+            transparent 50%
+        );
+}
+
+.photo-caption {
+    position: absolute;
+
+    bottom: 30px;
+    left: 35px;
+    right: 35px;
+
+    z-index: 2;
+
+    text-align: left;
+}
+
+.photo-caption h3 {
+    color: #ffe36a;
+
+    font-size: 27px;
+
+    text-shadow:
+        0 0 10px #d99f00;
+}
+
+.photo-caption p {
+    color: #eee2ba;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   CONTROLES DEL ÁLBUM
+========================================================= */
+
+.album-controls {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+.album-button {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    border: 1px solid #b88d13;
+
+    background: rgba(40, 30, 0, .7);
+
+    color: #ffdb4a;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.album-button:hover {
+    background: #4a3700;
+
+    box-shadow:
+        0 0 15px rgba(255, 204, 30, .3);
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #584813;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.dot.active {
+    width: 25px;
+    border-radius: 10px;
+
+    background: #e7bd2c;
+
+    box-shadow:
+        0 0 10px #e7bd2c;
+}
+
+
+/* =========================================================
+   FINAL
+========================================================= */
+
+.final-section {
+    text-align: center;
+
+    min-height: 75vh;
+
+    flex-direction: column;
+}
+
+.final-heart {
+    font-size: 100px;
+
+    animation: heartbeat 1.5s infinite;
+
+    filter:
+        drop-shadow(0 0 15px #ffd000);
+}
+
+.final-title {
+    margin-top: 25px;
+
+    font-size: clamp(40px, 6vw, 70px);
+
+    color: #ffdf4e;
+
+    text-shadow:
+        0 0 15px #ffc400,
+        0 0 35px rgba(255, 190, 0, .5);
+}
+
+.final-text {
+    margin-top: 20px;
+
+    color: #ded5b0;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CORAZONES FLOTANTES
+========================================================= */
+
+.floating-heart {
+    position: fixed;
+
+    bottom: -30px;
+
+    color: #ffd438;
+
+    font-size: 16px;
+
+    pointer-events: none;
+
+    z-index: 1000;
+
+    animation:
+        floatUp 7s linear forwards;
+
+    text-shadow:
+        0 0 10px #ffc400;
+}
+
+@keyframes floatUp {
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .8;
+    }
+
+    90% {
+        opacity: .5;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   ANIMACIÓN DE ENTRADA
+========================================================= */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .hero-title {
+        gap: 12px;
+    }
+
+    .date {
+        letter-spacing: 5px;
+        font-size: 11px;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .photo-viewer {
+        height: 450px;
+    }
+
+    .flowers {
+        transform:
+            translateX(-50%)
+            scale(.8);
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    section {
+        padding: 70px 15px;
+    }
+
+    .hero-title {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero-title .heart {
+        font-size: 55px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+
+        width: 90%;
+    }
+
+    .card {
+        min-height: 190px;
+    }
+
+    .photo-viewer {
+        height: 400px;
+    }
+
+    .photo-caption {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .photo-caption h3 {
+        font-size: 22px;
+    }
+
+    .letter {
+        padding: 30px 20px;
+    }
+
+    .letter p {
+        font-size: 15px;
+    }
+
+    .flowers {
+        transform:
+            translateX(-50%)
+            scale(.55);
+
+        bottom: -40px;
+    }
+
+    .small-title {
+        letter-spacing: 4px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     ESTRELLAS
+===================================================== -->
+
+<div class="stars" id="stars"></div>
+
+
+<!-- =====================================================
+     PORTADA
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <!-- CAMBIA ESTA FECHA -->
+        <div class="date">
+            27 • 09 • 2026
+        </div>
+
+        <div class="hero-title">
+
+            <span class="heart">♥</span>
+
+            <h1 class="gold-text">
+                Para Mi Amor
+            </h1>
+
+            <span class="heart">♥</span>
+
+        </div>
+
+        <p class="hero-subtitle">
+            Un pequeño detalle para celebrar nuestro primer mes...
+        </p>
+
+        <button
+            class="open-button"
+            onclick="abrirRecuerdo()"
+        >
+            ✨ Abrir ✨
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SECCIÓN DE FLORES
+===================================================== -->
+
+<section class="flower-section">
+
+    <div class="flower-content">
+
+        <div class="small-title">
+            UN PEQUEÑO DETALLE PARA TI MI AMOR
+        </div>
+
+        <h2 class="flower-title gold-text">
+            POR NUESTRO PRIMER MES
+        </h2>
+
+        <p class="flower-subtitle">
+            Porque llegaste a mi vida y la hiciste mucho más bonita...
+        </p>
+
+    </div>
+
+
+    <div class="flowers">
+
+        <!-- FLOR 1 -->
+        <div class="flower">
+
+            <div class="flower-head">
+
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+
+                <div class="flower-center"></div>
+
+            </div>
+
+            <div class="stem"></div>
+
+        </div>
+
+
+        <!-- FLOR 2 -->
+        <div class="flower">
+
+            <div class="flower-head">
+
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+
+                <div class="flower-center"></div>
+
+            </div>
+
+            <div class="stem"></div>
+
+        </div>
+
+
+        <!-- FLOR 3 -->
+        <div class="flower">
+
+            <div class="flower-head">
+
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+
+                <div class="flower-center"></div>
+
+            </div>
+
+            <div class="stem"></div>
+
+        </div>
+
+
+        <!-- FLOR 4 -->
+        <div class="flower">
+
+            <div class="flower-head">
+
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+
+                <div class="flower-center"></div>
+
+            </div>
+
+            <div class="stem"></div>
+
+        </div>
+
+
+        <!-- FLOR 5 -->
+        <div class="flower">
+
+            <div class="flower-head">
+
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+
+                <div class="flower-center"></div>
+
+            </div>
+
+            <div class="stem"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CARTAS
+===================================================== -->
+
+<section class="letters-section">
+
+    <div>
+
+        <div class="section-label">
+            HAY PALABRAS QUE TAMBIÉN SON REGALOS
+        </div>
+
+        <h2 class="section-title">
+            Unas cartas para ti 💌
+        </h2>
+
+        <p class="section-description">
+            Ábrelas cuando quieras o las necesites.
+        </p>
+
+
+        <div class="cards">
+
+            <div
+                class="card"
+                onclick="abrirCarta(1)"
+            >
+
+                <div class="card-icon">
+                    💌
+                </div>
+
+                <h3>
+                    Para cuando el día
+                    <br>
+                    no esté tan lindo
+                </h3>
+
+                <div class="card-button">
+                    ABRIR CARTA
+                </div>
+
+            </div>
+
+
+            <div
+                class="card"
+                onclick="abrirCarta(2)"
+            >
+
+                <div class="card-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Por si en algún
+                    <br>
+                    momento dudas de ti
+                </h3>
+
+                <div class="card-button">
+                    ABRIR CARTA
+                </div>
+
+            </div>
+
+
+            <div
+                class="card"
+                onclick="abrirCarta(3)"
+            >
+
+                <div class="card-icon">
+                    🌻
+                </div>
+
+                <h3>
+                    Por si algún día
+                    <br>
+                    no estoy cerca
+                </h3>
+
+                <div class="card-button">
+                    ABRIR CARTA
+                </div>
+
+            </div>
+
+
+            <div
+                class="card"
+                onclick="abrirCarta(4)"
+            >
+
+                <div class="card-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Una última carta
+                </h3>
+
+                <div class="card-button">
+                    ABRIR CARTA
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ÁLBUM DE FOTOS
+===================================================== -->
+
+<section class="album-section">
+
+    <div>
+
+        <div class="section-label">
+            NUESTROS RECUERDOS
+        </div>
+
+        <h2 class="section-title">
+            Nuestro primer mes 📸
+        </h2>
+
+        <p class="section-description">
+            Un pequeño álbum de algunos de nuestros momentos.
+        </p>
+
+
+        <div class="album">
+
+            <div class="photo-viewer">
+
+
+                <!-- FOTO 1
+                     CAMBIA LA URL POR TU FOTO -->
+                <div class="photo active">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1400&q=90"
+                        alt="Nuestro recuerdo"
+                    >
+
+                    <div class="photo-caption">
+
+                        <h3>
+                            El comienzo ❤️
+                        </h3>
+
+                        <p>
+                            El primero de muchos recuerdos juntos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOTO 2 -->
+                <div class="photo">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1400&q=90"
+                        alt="Momento juntos"
+                    >
+
+                    <div class="photo-caption">
+
+                        <h3>
+                            Contigo
+                        </h3>
+
+                        <p>
+                            Cualquier momento es especial si es contigo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOTO 3 -->
+                <div class="photo">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1400&q=90"
+                        alt="Nuestro amor"
+                    >
+
+                    <div class="photo-caption">
+
+                        <h3>
+                            Un mes de nosotros
+                        </h3>
+
+                        <p>
+                            30 días que significan muchísimo para mí.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOTO 4 -->
+                <div class="photo">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1494774157365-9e04c6720e3c?auto=format&fit=crop&w=1400&q=90"
+                        alt="Recuerdo juntos"
+                    >
+
+                    <div class="photo-caption">
+
+                        <h3>
+                            Momentos
+                        </h3>
+
+                        <p>
+                            Quiero seguir coleccionando momentos contigo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOTO 5 -->
+                <div class="photo">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1501901609772-df0848060b33?auto=format&fit=crop&w=1400&q=90"
+                        alt="Pareja"
+                    >
+
+                    <div class="photo-caption">
+
+                        <h3>
+                            Y esto recién comienza ✨
+                        </h3>
+
+                        <p>
+                            Espero que este sea solamente el primer capítulo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="album-controls">
+
+                <button
+                    class="album-button"
+                    onclick="fotoAnterior()"
+                >
+                    ‹
+                </button>
+
+
+                <div
+                    class="dots"
+                    id="dots"
+                ></div>
+
+
+                <button
+                    class="album-button"
+                    onclick="fotoSiguiente()"
+                >
+                    ›
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<section class="final-section">
+
+    <div class="final-heart">
+        ❤️
+    </div>
+
+    <h2 class="final-title">
+        Feliz primer mes
+    </h2>
+
+    <p class="final-text">
+
+        Gracias por este primer mes tan bonito.
+        <br>
+
+        Gracias por cada sonrisa, cada conversación
+        <br>
+
+        y cada momento compartido.
+        <br><br>
+
+        <strong>
+            Te quiero muchísimo. ❤️
+        </strong>
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     MODAL DE CARTAS
+===================================================== -->
+
+<div
+    class="modal"
+    id="modal"
+    onclick="cerrarSiFuera(event)"
+>
+
+    <div class="letter">
+
+        <div
+            class="letter-icon"
+            id="letterIcon"
+        >
+            💌
+        </div>
+
+        <h2 id="letterTitle">
+            Para ti
+        </h2>
+
+        <div id="letterContent"></div>
+
+        <button
+            class="close-modal"
+            onclick="cerrarCarta()"
+        >
+            Cerrar ❤️
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+/* =========================================================
+   ESTRELLAS
+========================================================= */
+
+const starsContainer =
+    document.getElementById("stars");
+
+for (let i = 0; i < 100; i++) {
+
+    const star =
+        document.createElement("div");
+
+    star.className = "star";
+
+    star.style.left =
+        Math.random() * 100 + "%";
+
+    star.style.top =
+        Math.random() * 100 + "%";
+
+    const size =
+        Math.random() * 3 + 1;
+
+    star.style.width = size + "px";
+    star.style.height = size + "px";
+
+    star.style.animationDelay =
+        Math.random() * 4 + "s";
+
+    star.style.animationDuration =
+        1.5 + Math.random() * 4 + "s";
+
+    starsContainer.appendChild(star);
+}
+
+
+/* =========================================================
+   SCROLL INICIAL
+========================================================= */
+
+function abrirRecuerdo() {
+
+    document
+        .querySelector(".flower-section")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+    explosionCorazones();
+}
+
+
+/* =========================================================
+   CORAZONES
+========================================================= */
+
+function crearCorazon() {
+
+    const heart =
+        document.createElement("div");
+
+    heart.className =
+        "floating-heart";
+
+    heart.innerHTML =
+        Math.random() > .5
+        ? "♥"
+        : "♡";
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        10 + Math.random() * 20 + "px";
+
+    heart.style.animationDuration =
+        5 + Math.random() * 6 + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 12000);
+}
+
+
+setInterval(crearCorazon, 900);
+
+
+/* =========================================================
+   EXPLOSIÓN
+========================================================= */
+
+function explosionCorazones() {
+
+    for (let i = 0; i < 25; i++) {
+
+        const heart =
+            document.createElement("div");
+
+        heart.className =
+            "floating-heart";
+
+        heart.innerHTML = "♥";
+
+        heart.style.left =
+            45 + Math.random() * 10 + "vw";
+
+        heart.style.bottom =
+            30 + Math.random() * 20 + "vh";
+
+        heart.style.fontSize =
+            15 + Math.random() * 25 + "px";
+
+        heart.style.animationDuration =
+            2 + Math.random() * 3 + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+}
+
+
+/* =========================================================
+   CARTAS
+========================================================= */
+
+const cartas = {
+
+    1: {
+
+        icon: "💌",
+
+        title:
+            "Para cuando el día no esté tan lindo",
+
+        text: `
+            <p>
+                Si estás leyendo esto porque hoy no fue tu mejor día,
+                quiero que recuerdes algo:
+                <strong>no tienes que poder con todo siempre.</strong>
+            </p>
+
+            <p>
+                Date un momento, respira y recuerda que hay alguien
+                que piensa en ti y que quiere verte sonreír.
+            </p>
+
+            <p>
+                Ojalá pudiera estar ahí para darte un abrazo,
+                pero mientras tanto recibe este pequeño pedacito
+                de mi cariño.
+            </p>
+
+            <p>
+                Mañana será otro día. ❤️
+            </p>
+        `
+    },
+
+
+    2: {
+
+        icon: "❤️",
+
+        title:
+            "Por si alguna vez dudas de ti",
+
+        text: `
+            <p>
+                Nunca olvides lo increíble que eres.
+            </p>
+
+            <p>
+                Tal vez algunas veces no puedas ver todas las cosas
+                bonitas que los demás vemos en ti.
+            </p>
+
+            <p>
+                Pero yo sí las veo.
+            </p>
+
+            <p>
+                Me encanta tu forma de ser, tu manera de hablar,
+                tus detalles y esas pequeñas cosas que probablemente
+                tú ni siquiera notas.
+            </p>
+
+            <p>
+                No dudes de lo mucho que vales. ❤️
+            </p>
+        `
+    },
+
+
+    3: {
+
+        icon: "🌻",
+
+        title:
+            "Por si algún día no estoy cerca",
+
+        text: `
+            <p>
+                Si algún día estamos lejos,
+                quiero que recuerdes todos los momentos bonitos
+                que hemos compartido.
+            </p>
+
+            <p>
+                La distancia puede separar dos lugares,
+                pero no tiene por qué separar dos corazones.
+            </p>
+
+            <p>
+                Guarda siempre un poquito de este primer mes
+                en tu corazón.
+            </p>
+
+            <p>
+                Y recuerda que siempre habrá alguien
+                pensando en ti. 🌻
+            </p>
+        `
+    },
+
+
+    4: {
+
+        icon: "✨",
+
+        title:
+            "Una última carta",
+
+        text: `
+            <p>
+                Si llegaste hasta aquí quiero decirte algo
+                muy sencillo:
+            </p>
+
+            <p>
+                <strong>
+                    Gracias por este primer mes.
+                </strong>
+            </p>
+
+            <p>
+                Gracias por dejarme formar parte de tu vida,
+                por cada conversación, cada risa,
+                cada abrazo y cada pequeño momento.
+            </p>
+
+            <p>
+                No sé qué nos deparará el futuro,
+                pero sí sé que quiero seguir creando
+                recuerdos contigo.
+            </p>
+
+            <p>
+                Este fue nuestro primer mes...
+                y espero que sea solamente el primero
+                de muchos más.
+            </p>
+
+            <p>
+                Te quiero muchísimo. ❤️
+            </p>
+        `
+    }
+
+};
+
+
+function abrirCarta(numero) {
+
+    const carta =
+        cartas[numero];
+
+    document.getElementById("letterIcon")
+        .textContent = carta.icon;
+
+    document.getElementById("letterTitle")
+        .textContent = carta.title;
+
+    document.getElementById("letterContent")
+        .innerHTML = carta.text;
+
+    document.getElementById("modal")
+        .classList.add("active");
+
+    document.body.style.overflow =
+        "hidden";
+}
+
+
+function cerrarCarta() {
+
+    document.getElementById("modal")
+        .classList.remove("active");
+
+    document.body.style.overflow =
+        "";
+}
+
+
+function cerrarSiFuera(event) {
+
+    if (event.target.id === "modal") {
+        cerrarCarta();
+    }
+}
+
+
+/* =========================================================
+   ÁLBUM
+========================================================= */
+
+const fotos =
+    document.querySelectorAll(".photo");
+
+const dots =
+    document.getElementById("dots");
+
+let fotoActual = 0;
+
+
+/* Crear indicadores */
+
+fotos.forEach((foto, index) => {
+
+    const dot =
+        document.createElement("div");
+
+    dot.className = "dot";
+
+    if (index === 0) {
+        dot.classList.add("active");
+    }
+
+    dot.onclick = () => {
+        mostrarFoto(index);
+    };
+
+    dots.appendChild(dot);
+});
+
+
+function mostrarFoto(index) {
+
+    if (index >= fotos.length) {
+        index = 0;
+    }
+
+    if (index < 0) {
+        index = fotos.length - 1;
+    }
+
+    fotoActual = index;
+
+    fotos.forEach((foto, i) => {
+
+        foto.classList.toggle(
+            "active",
+            i === fotoActual
+        );
+
+    });
+
+    document
+        .querySelectorAll(".dot")
+        .forEach((dot, i) => {
+
+            dot.classList.toggle(
+                "active",
+                i === fotoActual
+            );
+
+        });
+}
+
+
+function fotoSiguiente() {
+
+    mostrarFoto(
+        fotoActual + 1
+    );
+}
+
+
+function fotoAnterior() {
+
+    mostrarFoto(
+        fotoActual - 1
+    );
+}
+
+
+/* =========================================================
+   CAMBIO AUTOMÁTICO DEL ÁLBUM
+========================================================= */
+
+setInterval(() => {
+
+    fotoSiguiente();
+
+}, 5000);
+
+
+/* =========================================================
+   SWIPE PARA CELULAR
+========================================================= */
+
+const viewer =
+    document.querySelector(".photo-viewer");
+
+let touchStart = 0;
+let touchEnd = 0;
+
+viewer.addEventListener(
+    "touchstart",
+    event => {
+
+        touchStart =
+            event.changedTouches[0].screenX;
+
+    },
+    { passive: true }
+);
+
+
+viewer.addEventListener(
+    "touchend",
+    event => {
+
+        touchEnd =
+            event.changedTouches[0].screenX;
+
+        const difference =
+            touchStart - touchEnd;
+
+        if (Math.abs(difference) < 50) {
+            return;
+        }
+
+        if (difference > 0) {
+            fotoSiguiente();
+        } else {
+            fotoAnterior();
+        }
+
+    },
+    { passive: true }
+);
+
+
+/* =========================================================
+   ESC PARA CERRAR CARTA
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (event.key === "Escape") {
+            cerrarCarta();
+        }
+
+        if (event.key === "ArrowRight") {
+            fotoSiguiente();
+        }
+
+        if (event.key === "ArrowLeft") {
+            fotoAnterior();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
