@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un pequeño recuerdo de nuestro primer mes juntos ❤️">
+  <title>Un mes contigo ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Corazones de fondo -->
+  <div class="hearts" aria-hidden="true"></div>
+
+  <!-- Pantalla inicial -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="small-title">PARA MI PERSONA FAVORITA ❤️</p>
+
+      <h1>Un mes contigo</h1>
+
+      <p class="hero-subtitle">
+        30 días, miles de momentos y un montón de razones para sonreír.
+      </p>
+
+      <button class="main-button" id="startButton">
+        Abrir nuestro recuerdo 💌
+      </button>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Desliza</span>
+      <span>↓</span>
+    </div>
+  </section>
+
+
+  <!-- Contenido principal -->
+  <main id="mainContent">
+
+    <!-- Contador -->
+    <section class="section counter-section">
+      <div class="container">
+        <p class="section-label">NUESTRO TIEMPO</p>
+        <h2>Desde que comenzó lo nuestro ❤️</h2>
+
+        <div class="counter" id="counter">
+          <div class="counter-box">
+            <span id="days">0</span>
+            <small>Días</small>
+          </div>
+
+          <div class="counter-box">
+            <span id="hours">0</span>
+            <small>Horas</small>
+          </div>
+
+          <div class="counter-box">
+            <span id="minutes">0</span>
+            <small>Minutos</small>
+          </div>
+
+          <div class="counter-box">
+            <span id="seconds">0</span>
+            <small>Segundos</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Álbum -->
+    <section class="section gallery-section">
+      <div class="container">
+        <p class="section-label">NUESTROS RECUERDOS</p>
+        <h2>Un pequeño álbum de nosotros 📸</h2>
+
+        <p class="section-description">
+          Cambia las fotos de ejemplo por tus propias fotos.
+        </p>
+
+        <div class="slider">
+
+          <button class="slider-button prev" id="prevButton" aria-label="Foto anterior">
+            ‹
+          </button>
+
+          <div class="slides">
+
+            <!-- FOTO 1 -->
+            <div class="slide active">
+              <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=85"
+                   alt="Pareja abrazándose">
+              <div class="slide-caption">
+                <h3>El comienzo ❤️</h3>
+                <p>Ese momento que siempre voy a guardar.</p>
+              </div>
+            </div>
+
+            <!-- FOTO 2 -->
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=85"
+                   alt="Pareja caminando">
+              <div class="slide-caption">
+                <h3>Contigo</h3>
+                <p>Cualquier lugar se siente diferente a tu lado.</p>
+              </div>
+            </div>
+
+            <!-- FOTO 3 -->
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1200&q=85"
+                   alt="Corazones">
+              <div class="slide-caption">
+                <h3>Un mes ❤️</h3>
+                <p>Y espero que este sea solamente el primero de muchos.</p>
+              </div>
+            </div>
+
+            <!-- FOTO 4 -->
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e3c?auto=format&fit=crop&w=1200&q=85"
+                   alt="Pareja disfrutando juntos">
+              <div class="slide-caption">
+                <h3>Momentos</h3>
+                <p>Los pequeños momentos terminan siendo los más importantes.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="slider-button next" id="nextButton" aria-label="Foto siguiente">
+            ›
+          </button>
+
+        </div>
+
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+
+    <!-- Carta -->
+    <section class="section letter-section">
+      <div class="container">
+        <p class="section-label">PARA TI 💌</p>
+
+        <div class="letter">
+
+          <div class="letter-decoration">♥</div>
+
+          <h2>Una carta para ti</h2>
+
+          <p class="letter-greeting">
+            Mi amor,
+          </p>
+
+          <div class="letter-text">
+            <p>
+              Hoy cumplimos nuestro primer mes juntos y quería hacer algo
+              especial para recordarte lo importante que eres para mí.
+            </p>
+
+            <p>
+              Puede que un mes parezca poco tiempo, pero en este tiempo
+              hemos creado momentos que significan muchísimo para mí.
+              Cada conversación, cada risa, cada abrazo y cada instante
+              contigo se ha convertido en un recuerdo que quiero conservar.
+            </p>
+
+            <p>
+              Gracias por llegar a mi vida, por compartir tus días conmigo
+              y por hacer que incluso los momentos más simples sean
+              especiales.
+            </p>
+
+            <p>
+              Este es solamente nuestro primer mes, pero deseo que sea
+              el primero de muchísimos capítulos juntos.
+            </p>
+
+            <p class="letter-final">
+              Te quiero muchísimo. ❤️
+            </p>
+          </div>
+
+          <div class="signature">
+            Con todo mi amor,<br>
+            <span>Tu persona ❤️</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Frase -->
+    <section class="quote-section">
+      <div class="container">
+        <div class="quote-heart">♥</div>
+
+        <blockquote>
+          “De todas las casualidades bonitas que podían pasar,
+          encontrarte fue mi favorita.”
+        </blockquote>
+
+        <p>Feliz primer mes ❤️</p>
+      </div>
+    </section>
+
+
+    <!-- Final -->
+    <section class="final-section">
+      <div class="container">
+
+        <div class="big-heart">❤️</div>
+
+        <h2>Y esto recién comienza...</h2>
+
+        <p>
+          Gracias por este primer mes.
+          <br>
+          Espero que podamos llenar muchos más recuerdos juntos.
+        </p>
+
+        <button class="love-button" id="loveButton">
+          Te quiero ❤️
+        </button>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Botón de música -->
+  <button class="music-button" id="musicButton" aria-label="Activar música">
+    🎵
+  </button>
+
+  <!--
+    IMPORTANTE:
+    Coloca tu canción en la misma carpeta que estos archivos
+    y cambia "musica.mp3" por el nombre correspondiente.
+  -->
+  <audio id="backgroundMusic" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
